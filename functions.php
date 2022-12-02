@@ -6,3 +6,9 @@ $psw = '';
 for ($i = 0; $i < $pswLength; $i++) {
     $psw = $psw . $char[rand(0, 83)];
 }
+
+if (isset($pswLength)) {
+    session_start();
+    $_SESSION['psw'] = $psw;
+    header('Location: ./landingpage.php');
+}
