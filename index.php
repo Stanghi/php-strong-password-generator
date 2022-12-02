@@ -1,10 +1,5 @@
 <?php
-$char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!?&%$<>^+-*/()[]{}@#_=';
-$psw = '';
-
-for ($i = 0; $i < 32; $i++) {
-    $psw = $psw . $char[rand(0, 57)];
-}
+require_once __DIR__ . './functions.php';
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +22,7 @@ for ($i = 0; $i < 32; $i++) {
         <form method="GET" action="./index.php">
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Insert here psw length</label>
-                <input name="psw-length" type="text" class="form-control" id="exampleInputPassword1">
+                <input name="pswLength" type="number" min="5" max="32" class="form-control" id="exampleInputPassword1">
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
