@@ -19,9 +19,11 @@ session_start();
 
 <body>
     <div class="container">
-        <h1><?php echo $_SESSION['psw'] ?></h1>
-        <div class="col-12">
-            <a href="./index.php" class="btn btn-info">Torna alla homepage</a>
+        <div class="card p-5 mt-5 text-center">
+            <h1 class="m-5"><?php echo $_SESSION['psw'] ?></h1>
+            <div class="col-12">
+                <a href="./index.php" class="btn btn-primary">Go back</a>
+            </div>
         </div>
     </div>
 </body>

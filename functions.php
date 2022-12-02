@@ -4,7 +4,7 @@ $pswLength = $_GET['pswLength'];
 $psw = '';
 
 for ($i = 0; $i < $pswLength; $i++) {
-    $psw = $psw . $char[rand(0, 83)];
+    $psw = $psw . $char[rand(0, strlen($char) - 1)];
 }
 
 if (isset($pswLength)) {

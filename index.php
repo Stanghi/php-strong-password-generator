@@ -19,14 +19,16 @@ require_once __DIR__ . './functions.php';
 
 <body>
     <div class="container mt-5">
-        <form method="GET" action="./index.php">
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Insert here psw length</label>
-                <input name="pswLength" type="number" min="5" max="32" class="form-control" id="exampleInputPassword1">
-            </div>
+        <div class="card p-5 mt-5">
+            <form method="GET" action="./index.php">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Enter the password length</label>
+                    <input name="pswLength" type="number" min="5" max="32" class="form-control" id="exampleInputPassword1">
+                </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 
